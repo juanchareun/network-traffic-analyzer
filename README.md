@@ -63,5 +63,39 @@ Shows deeper insights where applicable:
 - **pip**
 - **Administrator/root permissions** (required for raw packet capture)
 
+### 🚀 How to Run
+
+1.  **Clone the repository (if you haven't already):**
+    ```bash
+    git clone https://github.com/your-username/network-traffic-analyzer.git
+    cd network-traffic-analyzer
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Execute the script with administrator privileges:**
+    ```bash
+    sudo python3 analyzer.py   # On Linux/macOS
+    python analyzer.py         # On Windows (run your terminal as Administrator)
+    ```
+
+### 🧑‍💻 How to Use
+
+1.  **Select a Network Interface:**
+    Upon running the script, it will list available network interfaces. Enter the number corresponding to the interface you wish to monitor.
+
+2.  **Apply Filters (Optional):**
+    You can specify a BPF (Berkeley Packet Filter) string to narrow down the traffic. Examples:
+    -   `tcp` (only TCP packets)
+    -   `udp` (only UDP packets)
+    -   `host 192.168.1.1` (traffic to/from a specific IP address)
+    -   `port 80` (traffic on a specific port)
+    -   Leave blank for no filtering.
+
+3.  **Observe Real-time Traffic:**
+    The tool will then start displaying real-time packet summaries. Press `Ctrl+C` to stop the capture.
+
+
 
 
