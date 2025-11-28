@@ -67,7 +67,7 @@ Shows deeper insights where applicable:
 
 1.  **Clone the repository (if you haven't already):**
     ```bash
-    git clone https://github.com/your-username/network-traffic-analyzer.git
+    git clone https://github.com/juanchareun/network-traffic-analyzer.git
     cd network-traffic-analyzer
     ```
 2.  **Install dependencies:**
